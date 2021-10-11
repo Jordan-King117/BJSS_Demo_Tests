@@ -29,16 +29,16 @@ public interface Var {
 
 
     //downloadable files
-    String FIRST_FLOWER_PICTURE     = "flower1.jpg";
-    String SECOND_FLOWER_PICTURE    = "flower.jpeg";
-    String THIRD_FLOWER_PICTURE     = "violet.jpg";
-    String SAMPLE_IMAGE             = "sample.png";
-    String SAMPLE_PDF               = "sample.pdf";
-    String PUP_KITTY_IMG            = "puppy_and_kitten.jpg";
-    String KOZICA_IMAGE             = "kozica.jpg";
-    String TEXT_FILE                = "loremipsum.txt";
-    String SECOND_TEXT_FILE         = "123.txt";
-    String YASH_DOC                 = "yash123 (1).docx";
-    String SOME_TEXT_FILE           = "some-file.txt";
-    String LUCK_PNG                 = "DilligenceIsTheMotherOfGoodLuck.png";
+    String FIRST_PICTURE     = "Picture.png";
+    String SECOND_PICTURE    = "example.jpg";
+    String THIRD_PICTURE     = "upload.png";
+    String SAMPLE_IMAGE             = "empty.txt";
+    String SAMPLE_PDF               = "text.txt";
+    String PUP_KITTY_IMG            = "img1.JPG";
+    String KOZICA_IMAGE             = "Cypress.docx";
+    String TEXT_FILE                = "apfm.jpg";
+    String SECOND_TEXT_FILE         = "sample.png";
+    String YASH_DOC                 = "logo.png";
+    String SOME_TEXT_FILE           = "testfile_upload.txt";
+    String LUCK_PNG                 = "no-thumb.png";
 }

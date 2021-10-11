@@ -28,9 +28,9 @@ public class Download_Files {
         TestAssertions.verifyPathExists(Xpaths.FILE_DOWNLOAD_PAGE, "File Downloader page not loaded");
 
         //assert all files appear on page
-        TestAssertions.verifyPathExists(GENERIC_TEXT_PATH + Var.FIRST_FLOWER_PICTURE + "']", "First flower image does not exist");
-        TestAssertions.verifyPathExists(GENERIC_TEXT_PATH + Var.SECOND_FLOWER_PICTURE + "']", "Second flower image does not exist");
-        TestAssertions.verifyPathExists(GENERIC_TEXT_PATH + Var.THIRD_FLOWER_PICTURE + "']", "Violet image does not exist");
+        TestAssertions.verifyPathExists(GENERIC_TEXT_PATH + Var.FIRST_PICTURE + "']", "First flower image does not exist");
+        TestAssertions.verifyPathExists(GENERIC_TEXT_PATH + Var.SECOND_PICTURE + "']", "Second flower image does not exist");
+        TestAssertions.verifyPathExists(GENERIC_TEXT_PATH + Var.THIRD_PICTURE + "']", "Violet image does not exist");
         TestAssertions.verifyPathExists(GENERIC_TEXT_PATH + Var.SAMPLE_IMAGE + "']", "Sample png does not exist");
         TestAssertions.verifyPathExists(GENERIC_TEXT_PATH + Var.SAMPLE_PDF + "']", "Sample pdf does not exist");
         TestAssertions.verifyPathExists(GENERIC_TEXT_PATH + Var.PUP_KITTY_IMG + "']", "Puppy and Kitty image does not exist");
@@ -45,9 +45,9 @@ public class Download_Files {
     @Test(dependsOnMethods = {"File_Downloader"}, description = "download all files")
     public void Download_Files() throws InterruptedException {
         //download all available files
-        Functions.clickOnElement("XPATH", GENERIC_TEXT_PATH + Var.FIRST_FLOWER_PICTURE + "']");
-        Functions.clickOnElement("XPATH", GENERIC_TEXT_PATH + Var.SECOND_FLOWER_PICTURE + "']");
-        Functions.clickOnElement("XPATH", GENERIC_TEXT_PATH + Var.THIRD_FLOWER_PICTURE + "']");
+        Functions.clickOnElement("XPATH", GENERIC_TEXT_PATH + Var.FIRST_PICTURE + "']");
+        Functions.clickOnElement("XPATH", GENERIC_TEXT_PATH + Var.SECOND_PICTURE + "']");
+        Functions.clickOnElement("XPATH", GENERIC_TEXT_PATH + Var.THIRD_PICTURE + "']");
         Functions.clickOnElement("XPATH", GENERIC_TEXT_PATH + Var.SAMPLE_IMAGE + "']");
         Functions.clickOnElement("XPATH", GENERIC_TEXT_PATH + Var.SAMPLE_PDF + "']");
         Functions.clickOnElement("XPATH", GENERIC_TEXT_PATH + Var.PUP_KITTY_IMG + "']");
@@ -59,9 +59,9 @@ public class Download_Files {
         Functions.clickOnElement("XPATH", GENERIC_TEXT_PATH + Var.LUCK_PNG + "']");
 
         //assert all files exist in download folder
-        assertFileExistsInFolder(Var.FIRST_FLOWER_PICTURE);
-        assertFileExistsInFolder(Var.SECOND_FLOWER_PICTURE);
-        assertFileExistsInFolder(Var.THIRD_FLOWER_PICTURE);
+        assertFileExistsInFolder(Var.FIRST_PICTURE);
+        assertFileExistsInFolder(Var.SECOND_PICTURE);
+        assertFileExistsInFolder(Var.THIRD_PICTURE);
         assertFileExistsInFolder(Var.SAMPLE_IMAGE);
         assertFileExistsInFolder(Var.SAMPLE_PDF);
         assertFileExistsInFolder(Var.PUP_KITTY_IMG);
@@ -79,9 +79,9 @@ public class Download_Files {
         Utils.emptyTheFolder(DOWNLOAD_FOLDER);
 
         //assert downloaded files can no longer be found in folder
-        assertFileDoesNotExistsInFolder(Var.FIRST_FLOWER_PICTURE);
-        assertFileDoesNotExistsInFolder(Var.SECOND_FLOWER_PICTURE);
-        assertFileDoesNotExistsInFolder(Var.THIRD_FLOWER_PICTURE);
+        assertFileDoesNotExistsInFolder(Var.FIRST_PICTURE);
+        assertFileDoesNotExistsInFolder(Var.SECOND_PICTURE);
+        assertFileDoesNotExistsInFolder(Var.THIRD_PICTURE);
         assertFileDoesNotExistsInFolder(Var.SAMPLE_IMAGE);
         assertFileDoesNotExistsInFolder(Var.SAMPLE_PDF);
         assertFileDoesNotExistsInFolder(Var.PUP_KITTY_IMG);
